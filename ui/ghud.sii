@@ -28,15 +28,21 @@ ui::window : _nameless.01A8.ABEC {
  my_parent: null
 }
 
+# Comments by Reinhard
+
+# all coordinates are operating on a virtual 1024x768 resolution, independend from the actual resolution
+
+# make mirror pane reaching the upper left and right corner
+
 ui::group : _nameless.01A7.20B4 {
  fitting: false
  my_children: 2
  my_children[0]: _nameless.01A4.1D4C
  my_children[1]: _nameless.0BFD.4DB4
  name: Mirrors
- coords_l: 15
- coords_r: 1009
- coords_t: 671
+ coords_l: 0
+ coords_r: 1024
+ coords_t: 768
  coords_b: 427
  area_l: 15
  area_r: 1009
@@ -51,6 +57,8 @@ ui::group : _nameless.01A7.20B4 {
  my_parent: _nameless.01A8.ABEC
 }
 
+# right mirror outer area
+
 ui::group : _nameless.01A4.1D4C {
  fitting: false
  my_children: 4
@@ -59,14 +67,14 @@ ui::group : _nameless.01A4.1D4C {
  my_children[2]: _nameless.0BFD.5EBC
  my_children[3]: _nameless.01AA.4E3C
  name: RightMirror
- coords_l: 829
- coords_r: 1009
- coords_t: 671
- coords_b: 427
- area_l: 829
+ coords_l: 924
+ coords_r: 1024
+ coords_t: 768
+ coords_b: 584
+ area_l: 909
  area_r: 1009
- area_t: 671
- area_b: 427
+ area_t: 771
+ area_b: 587
  id: 401
  layer: 0
  tab: -1
@@ -76,13 +84,15 @@ ui::group : _nameless.01A4.1D4C {
  my_parent: _nameless.01A7.20B4
 }
 
+# right mirror inner area
+
 ui_pip : _nameless.01A8.998C {
  left_mirror: false
  name: RightMirror
- coords_l: 836
- coords_r: 1002
- coords_t: 664
- coords_b: 434
+ coords_l: 931
+ coords_r: 1017
+ coords_t: 761
+ coords_b: 591
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -96,13 +106,15 @@ ui_pip : _nameless.01A8.998C {
  my_parent: _nameless.01A4.1D4C
 }
 
+# right mirror outer area
+
 ui::text : _nameless.0BFD.5D74 {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FFA4A4A4>"
  name: BackgroundA
- coords_l: 829
- coords_r: 1009
- coords_t: 671
- coords_b: 427
+ coords_l: 924
+ coords_r: 1024
+ coords_t: 768
+ coords_b: 584
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -116,13 +128,15 @@ ui::text : _nameless.0BFD.5D74 {
  my_parent: _nameless.01A4.1D4C
 }
 
+# right mirror inner overlay
+
 ui::text : _nameless.0BFD.5EBC {
  text: "<color value=16000000><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n<ret><offset hshift=163><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><offset hshift=164><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><offset hshift=165><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><offset vshift=227><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><offset vshift=228><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><offset vshift=229><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n"
  name: Overlay
- coords_l: 836
- coords_r: 1002
- coords_t: 664
- coords_b: 434
+ coords_l: 931
+ coords_r: 1017
+ coords_t: 761
+ coords_b: 591
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -136,13 +150,15 @@ ui::text : _nameless.0BFD.5EBC {
  my_parent: _nameless.01A4.1D4C
 }
 
+# right mirror outer area
+
 ui::text : _nameless.01AA.4E3C {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FF15BEE8>"
  name: BackgroundD
- coords_l: 829
- coords_r: 1009
- coords_t: 671
- coords_b: 427
+ coords_l: 924
+ coords_r: 1024
+ coords_t: 768
+ coords_b: 584
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -156,6 +172,8 @@ ui::text : _nameless.01AA.4E3C {
  my_parent: _nameless.01A4.1D4C
 }
 
+# left mirror outer area
+
 ui::group : _nameless.0BFD.4DB4 {
  fitting: false
  my_children: 4
@@ -164,14 +182,14 @@ ui::group : _nameless.0BFD.4DB4 {
  my_children[2]: _nameless.0C11.148C
  my_children[3]: _nameless.0C11.19AC
  name: LeftMirror
- coords_l: 15
- coords_r: 195
- coords_t: 671
- coords_b: 427
- area_l: 15
- area_r: 195
- area_t: 671
- area_b: 427
+ coords_l: 0
+ coords_r: 100
+ coords_t: 768
+ coords_b: 584
+ area_l: 0
+ area_r: 100
+ area_t: 768
+ area_b: 524
  id: 402
  layer: 0
  tab: -1
@@ -181,13 +199,15 @@ ui::group : _nameless.0BFD.4DB4 {
  my_parent: _nameless.01A7.20B4
 }
 
+# left mirror inner area
+
 ui_pip : _nameless.0BFD.4EE4 {
  left_mirror: true
  name: LeftMirror
- coords_l: 22
- coords_r: 188
- coords_t: 664
- coords_b: 434
+ coords_l: 7
+ coords_r: 93
+ coords_t: 761
+ coords_b: 591
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -201,13 +221,15 @@ ui_pip : _nameless.0BFD.4EE4 {
  my_parent: _nameless.0BFD.4DB4
 }
 
+# left mirror outer area
+
 ui::text : _nameless.0C11.10CC {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FFA4A4A4>"
  name: BackgroundA
- coords_l: 15
- coords_r: 195
- coords_t: 671
- coords_b: 427
+ coords_l: 0
+ coords_r: 100
+ coords_t: 768
+ coords_b: 584
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -221,13 +243,15 @@ ui::text : _nameless.0C11.10CC {
  my_parent: _nameless.0BFD.4DB4
 }
 
+# left mirror inner overlay
+
 ui::text : _nameless.0C11.148C {
  text: "<color value=16000000><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n<ret><offset hshift=163><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><offset hshift=164><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><offset hshift=165><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><offset vshift=227><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><offset vshift=228><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><offset vshift=229><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n"
  name: Overlay
- coords_l: 22
- coords_r: 188
- coords_t: 664
- coords_b: 434
+ coords_l: 7
+ coords_r: 93
+ coords_t: 761
+ coords_b: 591
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -241,13 +265,15 @@ ui::text : _nameless.0C11.148C {
  my_parent: _nameless.0BFD.4DB4
 }
 
+# left mirror outer area
+
 ui::text : _nameless.0C11.19AC {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FF15BEE8>"
  name: BackgroundD
- coords_l: 15
- coords_r: 195
- coords_t: 671
- coords_b: 427
+ coords_l: 0
+ coords_r: 100
+ coords_t: 768
+ coords_b: 584
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
@@ -260,6 +286,8 @@ ui::text : _nameless.0C11.19AC {
  pointer: -1
  my_parent: _nameless.0BFD.4DB4
 }
+
+# map area
 
 ui::group : _nameless.0C11.1D6C {
  fitting: false
@@ -283,6 +311,8 @@ ui::group : _nameless.0C11.1D6C {
  my_parent: _nameless.01A8.ABEC
 }
 
+# map
+
 ui_map : _nameless.0C15.0834 {
  name: ""
  coords_l: 732
@@ -301,6 +331,8 @@ ui_map : _nameless.0C15.0834 {
  pointer: -1
  my_parent: _nameless.0C11.1D6C
 }
+
+# second map
 
 ui::group : _nameless.0C15.0B4C {
  fitting: true
@@ -443,13 +475,15 @@ ui::group : _nameless.0C15.1504 {
  my_parent: _nameless.0C15.13D4
 }
 
+# date and time
+
 ui::text_common : _nameless.0C15.1634 {
  value: "Monday 23:59"
  look_template: txt.small.center
  text: "<align hstyle=center><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>Monday 23:59</font></align>"
  name: Time
- coords_l: 894
- coords_r: 1005
+ coords_l: 794
+ coords_r: 905
  coords_t: 743
  coords_b: 723
  area_l: &ff7d87d7
@@ -465,13 +499,15 @@ ui::text_common : _nameless.0C15.1634 {
  my_parent: _nameless.0C15.1504
 }
 
+# bank account
+
 ui::text_common : _nameless.0C15.1864 {
  value: "999.101.000"
  look_template: txt.small.center
  text: "<align hstyle=center><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>999.101.000</font></align>"
  name: Money
- coords_l: 674
- coords_r: 750
+ coords_l: 574
+ coords_r: 650
  coords_t: 743
  coords_b: 723
  area_l: &ff7d87d7
@@ -487,11 +523,13 @@ ui::text_common : _nameless.0C15.1864 {
  my_parent: _nameless.0C15.1504
 }
 
+# bank account background white
+
 ui::text : _nameless.0C15.1A94 {
  text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=355 height=34>\r\n<ret><offset hshift=357 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=358 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FFB9B9B9><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=331 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=26 height=26>\r\n<ret><offset hshift=141 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=185 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=239 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FFD4D4D4><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
  name: "Info Bcg Analog"
- coords_l: 650
- coords_r: 1009
+ coords_l: 550
+ coords_r: 909
  coords_t: 753
  coords_b: 719
  area_l: 650
@@ -507,11 +545,13 @@ ui::text : _nameless.0C15.1A94 {
  my_parent: _nameless.0C15.1504
 }
 
+# bank account background yellow
+
 ui::text : _nameless.0BFD.49DC {
  text: "<color value=4c000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=355 height=34>\r\n<ret><offset hshift=357 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=358 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FF15BEE8><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=331 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=26 height=26>\r\n<ret><offset hshift=141 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=185 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=239 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FF15BEE8><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
  name: "Info Bcg Digital"
- coords_l: 650
- coords_r: 1009
+ coords_l: 550
+ coords_r: 909
  coords_t: 753
  coords_b: 719
  area_l: &ff7d87d7
@@ -527,13 +567,15 @@ ui::text : _nameless.0BFD.49DC {
  my_parent: _nameless.0C15.1504
 }
 
+# driver, truck & trailer condition
+
 ui::text_common : _nameless.0BFD.4B24 {
  value: "0.5|0.5|1|0.5"
  look_template: txt.info_panel.digital
  text: "<offset hshift=1 vshift=-2><img src=/material/ui/hud/pics.mat top=0.5 right=0.45 color=FF15BEE8><ret><offset hshift=1 vshift=-2><align vstyle=bottom><img src=/material/ui/hud/pics.mat top=0.5 right=0.45 color=FF985D1D></align><ret><offset hshift=41 vshift=-2><img src=/material/ui/hud/pics.mat left=0.5 top=0.5 color=FF15BEE8><ret><offset hshift=41 vshift=-2><img src=/material/ui/hud/pics.mat left=0.5 color=@@rgb_red@@ top=0.5 right=0.5><ret><offset hshift=83 vshift=-2><img src=/material/ui/hud/pics.mat color=FF15BEE8 left=0.3125 bottom=0.5 right=0.5><ret><offset hshift=83 vshift=-2><img src=/material/ui/hud/pics.mat left=0.3125 bottom=0.5 color=@@rgb_red@@ right=1>"
  name: "Info Panel"
- coords_l: 756
- coords_r: 883
+ coords_l: 656
+ coords_r: 783
  coords_t: 749
  coords_b: 719
  area_l: &ff7d87d7
@@ -549,11 +591,13 @@ ui::text_common : _nameless.0BFD.4B24 {
  my_parent: _nameless.0C15.1504
 }
 
+# driver, truck & trailer condition background yellow
+
 ui::text : _nameless.0C15.2FDC {
  text: "<color value=4c000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=324 height=34>\r\n<ret><offset hshift=326 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=327 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FF15BEE8><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=300 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=154 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=208 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FF15BEE8><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
  name: "Info Bcg Digital NF"
- coords_l: 681
- coords_r: 1009
+ coords_l: 581
+ coords_r: 909
  coords_t: 753
  coords_b: 719
  area_l: &ff7d87d7
@@ -569,11 +613,13 @@ ui::text : _nameless.0C15.2FDC {
  my_parent: _nameless.0C15.1504
 }
 
+# driver, truck & trailer condition background white
+
 ui::text : _nameless.0C15.35C4 {
  text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=324 height=34>\r\n<ret><offset hshift=326 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=327 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FFB9B9B9><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=300 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=154 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=208 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FFD4D4D4><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
  name: "Info Bcg Analog NF"
- coords_l: 681
- coords_r: 1009
+ coords_l: 581
+ coords_r: 909
  coords_t: 753
  coords_b: 719
  area_l: &ff7d87d7
@@ -589,6 +635,8 @@ ui::text : _nameless.0C15.35C4 {
  my_parent: _nameless.0C15.1504
 }
 
+# whole cargo and destination window
+
 ui::group : _nameless.0BFD.4C7C {
  fitting: false
  my_children: 4
@@ -597,8 +645,8 @@ ui::group : _nameless.0BFD.4C7C {
  my_children[2]: _nameless.0C15.4294
  my_children[3]: _nameless.0C15.454C
  name: "Cargo Info"
- coords_l: 15
- coords_r: 233
+ coords_l: 115
+ coords_r: 333
  coords_t: 753
  coords_b: 701
  area_l: 15
@@ -614,11 +662,13 @@ ui::group : _nameless.0BFD.4C7C {
  my_parent: _nameless.0C15.13D4
 }
 
+# cargo & destination background white
+
 ui::text : _nameless.0C15.3D0C {
  text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=214 height=52>\r\n<ret><offset hshift=216 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=217 vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n\r\n<ret><color value=FFB9B9B9><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=208 height=20>\r\n\r\n<ret><color value=FFA4A4A4><offset hshift=5 vshift=27><img src=/material/ui/white.mat width=208 height=20>\r\n\r\n"
  name: "Cargo Bcg Analog"
- coords_l: 15
- coords_r: 233
+ coords_l: 115
+ coords_r: 333
  coords_t: 753
  coords_b: 701
  area_l: &ff7d87d7
@@ -634,12 +684,14 @@ ui::text : _nameless.0C15.3D0C {
  my_parent: _nameless.0BFD.4C7C
 }
 
+# cargo
+
 ui::text_common : _nameless.0C15.413C {
  value: "SellPlan - Frozen Food"
  look_template: txt.small.left
  text: "<align hstyle=left><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>SellPlan - Frozen Food</font></align>"
  name: "Cargo Text"
- coords_l: 30
+ coords_l: 130
  coords_r: &43650001
  coords_t: 747
  coords_b: 727
@@ -656,13 +708,15 @@ ui::text_common : _nameless.0C15.413C {
  my_parent: _nameless.0BFD.4C7C
 }
 
+# destination
+
 ui::text_common : _nameless.0C15.4294 {
  value: Berlin
  look_template: txt.small.left
  text: "<align hstyle=left><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>Berlin</font></align>"
  name: "Cargo City"
- coords_l: 30
- coords_r: 229
+ coords_l: 130
+ coords_r: 329
  coords_t: 724
  coords_b: 704
  area_l: &ff7d87d7
@@ -678,11 +732,13 @@ ui::text_common : _nameless.0C15.4294 {
  my_parent: _nameless.0BFD.4C7C
 }
 
+# cargo & destination background yellow
+
 ui::text : _nameless.0C15.454C {
  text: "<color value=4c000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=214 height=52>\r\n<ret><offset hshift=216 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=217 vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n\r\n<ret><color value=FF15BEE8><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=208 height=20>\r\n\r\n<ret><color value=FF1EAEDA><offset hshift=5 vshift=27><img src=/material/ui/white.mat width=208 height=20>\r\n<ret><color value=FF0890b8><offset hshift=5 vshift=25><img src=/material/ui/white.mat width=208 height=2>\r\n\r\n"
  name: "Cargo Bcg Digital"
- coords_l: 15
- coords_r: 233
+ coords_l: 115
+ coords_r: 333
  coords_t: 753
  coords_b: 701
  area_l: &ff7d87d7
