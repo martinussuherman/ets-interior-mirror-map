@@ -1,0 +1,862 @@
+SiiNunit
+{
+ui::window : _nameless.01A8.ABEC {
+ clip_children: true
+ window_handler: null
+ fitting: false
+ my_children: 5
+ my_children[0]: _nameless.01A7.20B4
+ my_children[1]: _nameless.0C11.1D6C
+ my_children[2]: _nameless.0C15.0B4C
+ my_children[3]: _nameless.0C15.13D4
+ my_children[4]: _nameless.0C15.50E4
+ name: window
+ coords_l: 0
+ coords_r: 1024
+ coords_t: 768
+ coords_b: 0
+ area_l: 0
+ area_r: 1024
+ area_t: 768
+ area_b: 0
+ id: 0
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: null
+}
+
+ui::group : _nameless.01A7.20B4 {
+ fitting: false
+ my_children: 2
+ my_children[0]: _nameless.01A4.1D4C
+ my_children[1]: _nameless.0BFD.4DB4
+ name: Mirrors
+ coords_l: 15
+ coords_r: 1009
+ coords_t: 671
+ coords_b: 427
+ area_l: 15
+ area_r: 1009
+ area_t: 671
+ area_b: 427
+ id: 400
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A8.ABEC
+}
+
+ui::group : _nameless.01A4.1D4C {
+ fitting: false
+ my_children: 4
+ my_children[0]: _nameless.01A8.998C
+ my_children[1]: _nameless.0BFD.5D74
+ my_children[2]: _nameless.0BFD.5EBC
+ my_children[3]: _nameless.01AA.4E3C
+ name: RightMirror
+ coords_l: 829
+ coords_r: 1009
+ coords_t: 671
+ coords_b: 427
+ area_l: 829
+ area_r: 1009
+ area_t: 671
+ area_b: 427
+ id: 401
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A7.20B4
+}
+
+ui_pip : _nameless.01A8.998C {
+ left_mirror: false
+ name: RightMirror
+ coords_l: 836
+ coords_r: 1002
+ coords_t: 664
+ coords_b: 434
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 0
+ layer: 1
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A4.1D4C
+}
+
+ui::text : _nameless.0BFD.5D74 {
+ text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FFA4A4A4>"
+ name: BackgroundA
+ coords_l: 829
+ coords_r: 1009
+ coords_t: 671
+ coords_b: 427
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 408
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A4.1D4C
+}
+
+ui::text : _nameless.0BFD.5EBC {
+ text: "<color value=16000000><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n<ret><offset hshift=163><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><offset hshift=164><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><offset hshift=165><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><offset vshift=227><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><offset vshift=228><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><offset vshift=229><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n"
+ name: Overlay
+ coords_l: 836
+ coords_r: 1002
+ coords_t: 664
+ coords_b: 434
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 0
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A4.1D4C
+}
+
+ui::text : _nameless.01AA.4E3C {
+ text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FF15BEE8>"
+ name: BackgroundD
+ coords_l: 829
+ coords_r: 1009
+ coords_t: 671
+ coords_b: 427
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 407
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A4.1D4C
+}
+
+ui::group : _nameless.0BFD.4DB4 {
+ fitting: false
+ my_children: 4
+ my_children[0]: _nameless.0BFD.4EE4
+ my_children[1]: _nameless.0C11.10CC
+ my_children[2]: _nameless.0C11.148C
+ my_children[3]: _nameless.0C11.19AC
+ name: LeftMirror
+ coords_l: 15
+ coords_r: 195
+ coords_t: 671
+ coords_b: 427
+ area_l: 15
+ area_r: 195
+ area_t: 671
+ area_b: 427
+ id: 402
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A7.20B4
+}
+
+ui_pip : _nameless.0BFD.4EE4 {
+ left_mirror: true
+ name: LeftMirror
+ coords_l: 22
+ coords_r: 188
+ coords_t: 664
+ coords_b: 434
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 0
+ layer: 1
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4DB4
+}
+
+ui::text : _nameless.0C11.10CC {
+ text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FFA4A4A4>"
+ name: BackgroundA
+ coords_l: 15
+ coords_r: 195
+ coords_t: 671
+ coords_b: 427
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 406
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4DB4
+}
+
+ui::text : _nameless.0C11.148C {
+ text: "<color value=16000000><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n<ret><offset hshift=163><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><offset hshift=164><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><offset hshift=165><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><offset vshift=227><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><offset vshift=228><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><offset vshift=229><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n"
+ name: Overlay
+ coords_l: 22
+ coords_r: 188
+ coords_t: 664
+ coords_b: 434
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 0
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4DB4
+}
+
+ui::text : _nameless.0C11.19AC {
+ text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FF15BEE8>"
+ name: BackgroundD
+ coords_l: 15
+ coords_r: 195
+ coords_t: 671
+ coords_b: 427
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 405
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4DB4
+}
+
+ui::group : _nameless.0C11.1D6C {
+ fitting: false
+ my_children: 1
+ my_children[0]: _nameless.0C15.0834
+ name: Map
+ coords_l: 732
+ coords_r: 1009
+ coords_t: 712
+ coords_b: 489
+ area_l: 732
+ area_r: 1009
+ area_t: 712
+ area_b: 489
+ id: 600
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A8.ABEC
+}
+
+ui_map : _nameless.0C15.0834 {
+ name: ""
+ coords_l: 732
+ coords_r: 1009
+ coords_t: 712
+ coords_b: 489
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 610
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C11.1D6C
+}
+
+ui::group : _nameless.0C15.0B4C {
+ fitting: true
+ my_children: 2
+ my_children[0]: _nameless.0C15.0D5C
+ my_children[1]: _nameless.0C15.114C
+ name: Message
+ coords_l: 15
+ coords_r: &43b48002
+ coords_t: &4362ffff
+ coords_b: 15
+ area_l: 15
+ area_r: &43b48002
+ area_t: &4362ffff
+ area_b: 15
+ id: 700
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A8.ABEC
+}
+
+ui::text_common : _nameless.0C15.0D5C {
+ value: ""
+ look_template: txt.frame.hud
+ text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=-2><ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=-1><ret><offset hshift=2><img src=/material/ui/white.mat width=-2 yscale=stretch><ret><align hstyle=right right=-1><offset vshift=1><img src=/material/ui/white.mat width=1 height=-1></align><ret><align hstyle=right><offset vshift=2><img src=/material/ui/white.mat width=1 height=-2></align><ret><color value=D0363636><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=-5 height=-5>"
+ name: Frame
+ coords_l: 15
+ coords_r: &43b48002
+ coords_t: &4362ffff
+ coords_b: 15
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 705
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.0B4C
+}
+
+ui::group : _nameless.0C15.114C {
+ fitting: true
+ my_children: 1
+ my_children[0]: _nameless.0C15.127C
+ name: MessageControls
+ coords_l: 30
+ coords_r: &43ad0001
+ coords_t: 212
+ coords_b: &41effff8
+ area_l: 30
+ area_r: &43ad0001
+ area_t: 212
+ area_b: &41effff8
+ id: 710
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.0B4C
+}
+
+ui::text_common : _nameless.0C15.127C {
+ value: TEXT
+ look_template: txt.normal.center
+ text: "<align hstyle=center vstyle=center><font face=/font/@@encoding@@/normal.font>TEXT</font></align>"
+ name: MessageText
+ coords_l: 30
+ coords_r: &43ad0001
+ coords_t: 212
+ coords_b: &41effff8
+ area_l: 30
+ area_r: &43ad0001
+ area_t: 212
+ area_b: &41effff8
+ id: 715
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.114C
+}
+
+ui::group : _nameless.0C15.13D4 {
+ fitting: false
+ my_children: 3
+ my_children[0]: _nameless.0C15.1504
+ my_children[1]: _nameless.0BFD.4C7C
+ my_children[2]: _nameless.0C15.49EC
+ name: Hideable
+ coords_l: 0
+ coords_r: 1024
+ coords_t: 768
+ coords_b: 0
+ area_l: 0
+ area_r: 1024
+ area_t: 768
+ area_b: 0
+ id: 10
+ layer: -1
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A8.ABEC
+}
+
+ui::group : _nameless.0C15.1504 {
+ fitting: false
+ my_children: 7
+ my_children[0]: _nameless.0C15.1634
+ my_children[1]: _nameless.0C15.1864
+ my_children[2]: _nameless.0C15.1A94
+ my_children[3]: _nameless.0BFD.49DC
+ my_children[4]: _nameless.0BFD.4B24
+ my_children[5]: _nameless.0C15.2FDC
+ my_children[6]: _nameless.0C15.35C4
+ name: Info
+ coords_l: 605
+ coords_r: 1009
+ coords_t: 753
+ coords_b: 719
+ area_l: 605
+ area_r: 1009
+ area_t: 753
+ area_b: 719
+ id: 550
+ layer: -1
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.13D4
+}
+
+ui::text_common : _nameless.0C15.1634 {
+ value: "Monday 23:59"
+ look_template: txt.small.center
+ text: "<align hstyle=center><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>Monday 23:59</font></align>"
+ name: Time
+ coords_l: 894
+ coords_r: 1005
+ coords_t: 743
+ coords_b: 723
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 510
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::text_common : _nameless.0C15.1864 {
+ value: "999.101.000"
+ look_template: txt.small.center
+ text: "<align hstyle=center><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>999.101.000</font></align>"
+ name: Money
+ coords_l: 674
+ coords_r: 750
+ coords_t: 743
+ coords_b: 723
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 500
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::text : _nameless.0C15.1A94 {
+ text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=355 height=34>\r\n<ret><offset hshift=357 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=358 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FFB9B9B9><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=331 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=26 height=26>\r\n<ret><offset hshift=141 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=185 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=239 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FFD4D4D4><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
+ name: "Info Bcg Analog"
+ coords_l: 650
+ coords_r: 1009
+ coords_t: 753
+ coords_b: 719
+ area_l: 650
+ area_r: 1009
+ area_t: 753
+ area_b: 719
+ id: 552
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::text : _nameless.0BFD.49DC {
+ text: "<color value=4c000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=355 height=34>\r\n<ret><offset hshift=357 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=358 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FF15BEE8><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=331 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=26 height=26>\r\n<ret><offset hshift=141 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=185 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=239 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FF15BEE8><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
+ name: "Info Bcg Digital"
+ coords_l: 650
+ coords_r: 1009
+ coords_t: 753
+ coords_b: 719
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 551
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::text_common : _nameless.0BFD.4B24 {
+ value: "0.5|0.5|1|0.5"
+ look_template: txt.info_panel.digital
+ text: "<offset hshift=1 vshift=-2><img src=/material/ui/hud/pics.mat top=0.5 right=0.45 color=FF15BEE8><ret><offset hshift=1 vshift=-2><align vstyle=bottom><img src=/material/ui/hud/pics.mat top=0.5 right=0.45 color=FF985D1D></align><ret><offset hshift=41 vshift=-2><img src=/material/ui/hud/pics.mat left=0.5 top=0.5 color=FF15BEE8><ret><offset hshift=41 vshift=-2><img src=/material/ui/hud/pics.mat left=0.5 color=@@rgb_red@@ top=0.5 right=0.5><ret><offset hshift=83 vshift=-2><img src=/material/ui/hud/pics.mat color=FF15BEE8 left=0.3125 bottom=0.5 right=0.5><ret><offset hshift=83 vshift=-2><img src=/material/ui/hud/pics.mat left=0.3125 bottom=0.5 color=@@rgb_red@@ right=1>"
+ name: "Info Panel"
+ coords_l: 756
+ coords_r: 883
+ coords_t: 749
+ coords_b: 719
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 520
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::text : _nameless.0C15.2FDC {
+ text: "<color value=4c000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=324 height=34>\r\n<ret><offset hshift=326 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=327 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FF15BEE8><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=300 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=154 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=208 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FF15BEE8><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
+ name: "Info Bcg Digital NF"
+ coords_l: 681
+ coords_r: 1009
+ coords_t: 753
+ coords_b: 719
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 553
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::text : _nameless.0C15.35C4 {
+ text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=324 height=34>\r\n<ret><offset hshift=326 vshift=1><img src=/material/ui/white.mat width=1 height=32>\r\n<ret><offset hshift=327 vshift=2><img src=/material/ui/white.mat width=1 height=30>\r\n\r\n<ret><color value=FFB9B9B9><offset hshift=24 vshift=4><img src=/material/ui/white.mat width=300 height=26>\r\n\r\n<ret><color value=FF404040><offset hshift=4 vshift=4><img src=/material/ui/white.mat width=20 height=26>\r\n<ret><offset hshift=110 vshift=4><img src=/material/ui/white.mat width=39 height=26>\r\n<ret><offset hshift=154 vshift=4><img src=/material/ui/white.mat width=49 height=26>\r\n<ret><offset hshift=208 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><offset hshift=100 vshift=4><img src=/material/ui/white.mat width=5 height=26>\r\n<ret><color value=FFD4D4D4><offset hshift=9 vshift=5><font face=/font/@@encoding@@/bold.font>\x80</font>"
+ name: "Info Bcg Analog NF"
+ coords_l: 681
+ coords_r: 1009
+ coords_t: 753
+ coords_b: 719
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 554
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.1504
+}
+
+ui::group : _nameless.0BFD.4C7C {
+ fitting: false
+ my_children: 4
+ my_children[0]: _nameless.0C15.3D0C
+ my_children[1]: _nameless.0C15.413C
+ my_children[2]: _nameless.0C15.4294
+ my_children[3]: _nameless.0C15.454C
+ name: "Cargo Info"
+ coords_l: 15
+ coords_r: 233
+ coords_t: 753
+ coords_b: 701
+ area_l: 15
+ area_r: 233
+ area_t: 753
+ area_b: 701
+ id: 300
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.13D4
+}
+
+ui::text : _nameless.0C15.3D0C {
+ text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=214 height=52>\r\n<ret><offset hshift=216 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=217 vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n\r\n<ret><color value=FFB9B9B9><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=208 height=20>\r\n\r\n<ret><color value=FFA4A4A4><offset hshift=5 vshift=27><img src=/material/ui/white.mat width=208 height=20>\r\n\r\n"
+ name: "Cargo Bcg Analog"
+ coords_l: 15
+ coords_r: 233
+ coords_t: 753
+ coords_b: 701
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 302
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4C7C
+}
+
+ui::text_common : _nameless.0C15.413C {
+ value: "SellPlan - Frozen Food"
+ look_template: txt.small.left
+ text: "<align hstyle=left><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>SellPlan - Frozen Food</font></align>"
+ name: "Cargo Text"
+ coords_l: 30
+ coords_r: &43650001
+ coords_t: 747
+ coords_b: 727
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 321
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4C7C
+}
+
+ui::text_common : _nameless.0C15.4294 {
+ value: Berlin
+ look_template: txt.small.left
+ text: "<align hstyle=left><font face=/font/@@encoding@@/small.font><color value=@@rgb_gr_d@@>Berlin</font></align>"
+ name: "Cargo City"
+ coords_l: 30
+ coords_r: 229
+ coords_t: 724
+ coords_b: 704
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 320
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4C7C
+}
+
+ui::text : _nameless.0C15.454C {
+ text: "<color value=4c000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=2><img src=/material/ui/white.mat width=214 height=52>\r\n<ret><offset hshift=216 vshift=1><img src=/material/ui/white.mat width=1 height=50>\r\n<ret><offset hshift=217 vshift=2><img src=/material/ui/white.mat width=1 height=48>\r\n\r\n<ret><color value=FF15BEE8><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=208 height=20>\r\n\r\n<ret><color value=FF1EAEDA><offset hshift=5 vshift=27><img src=/material/ui/white.mat width=208 height=20>\r\n<ret><color value=FF0890b8><offset hshift=5 vshift=25><img src=/material/ui/white.mat width=208 height=2>\r\n\r\n"
+ name: "Cargo Bcg Digital"
+ coords_l: 15
+ coords_r: 233
+ coords_t: 753
+ coords_b: 701
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 301
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0BFD.4C7C
+}
+
+ui::group : _nameless.0C15.49EC {
+ fitting: false
+ my_children: 2
+ my_children[0]: _nameless.0C15.4C3C
+ my_children[1]: _nameless.0C15.4E24
+ name: "Mouse Controller"
+ coords_l: 257
+ coords_r: 769
+ coords_t: 142
+ coords_b: &41600008
+ area_l: 257
+ area_r: 769
+ area_t: 142
+ area_b: &41600008
+ id: 900
+ layer: 1
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.13D4
+}
+
+ui::text : _nameless.0C15.4C3C {
+ text: "<img src=/material/ui/hud/mouse_ctrl_background.mat>"
+ name: ""
+ coords_l: 257
+ coords_r: 769
+ coords_t: 142
+ coords_b: &41600008
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 0
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.49EC
+}
+
+ui_gauge : _nameless.0C15.4E24 {
+ min: -70
+ max: 63
+ value: 1
+ range: 2
+ material: "/material/ui/hud/mouse_ctrl_pointer.mat"
+ xref_pos: 0
+ yref_pos: 145
+ off_x: 0
+ off_y: 0
+ smooth_move: false
+ name: ""
+ coords_l: 256
+ coords_r: 770
+ coords_t: 134
+ coords_b: -195
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 910
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.49EC
+}
+
+ui::group : _nameless.0C15.50E4 {
+ fitting: true
+ my_children: 2
+ my_children[0]: _nameless.0C15.5484
+ my_children[1]: _nameless.0C15.58E4
+ name: TutorialMessage
+ coords_l: 15
+ coords_r: &43b48002
+ coords_t: 420
+ coords_b: 232
+ area_l: 15
+ area_r: &43b48002
+ area_t: 420
+ area_b: 232
+ id: 800
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.01A8.ABEC
+}
+
+ui::text_common : _nameless.0C15.5484 {
+ value: ""
+ look_template: txt.frame.tutorial
+ text: "<color value=4D000000><offset vshift=2><img src=/material/ui/white.mat width=1 height=-2><ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=-1><ret><offset hshift=2><img src=/material/ui/white.mat width=-2 yscale=stretch><ret><align hstyle=right right=-1><offset vshift=1><img src=/material/ui/white.mat width=1 height=-1></align><ret><align hstyle=right><offset vshift=2><img src=/material/ui/white.mat width=1 height=-2></align><ret><color value=D0FFFFFF><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=-5 height=-5>"
+ name: Frame
+ coords_l: 15
+ coords_r: &43b48002
+ coords_t: 420
+ coords_b: 232
+ area_l: &ff7d87d7
+ area_r: &ff7d87d7
+ area_t: &ff7d87d7
+ area_b: &ff7d87d7
+ id: 805
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.50E4
+}
+
+ui::group : _nameless.0C15.58E4 {
+ fitting: true
+ my_children: 1
+ my_children[0]: _nameless.0C15.5B8C
+ name: MessageControls
+ coords_l: 30
+ coords_r: &43ad0001
+ coords_t: 416
+ coords_b: &436bffff
+ area_l: 30
+ area_r: &43ad0001
+ area_t: 416
+ area_b: &436bffff
+ id: 810
+ layer: 0
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.50E4
+}
+
+ui::text_common : _nameless.0C15.5B8C {
+ value: TEXT
+ look_template: txt.normal.center.dark
+ text: "<align hstyle=center vstyle=center><font face=/font/@@encoding@@/normal.font><color value=@@rgb_gr_d@@>TEXT</font></align>"
+ name: MessageText
+ coords_l: 30
+ coords_r: &43ad0001
+ coords_t: 416
+ coords_b: &436bffff
+ area_l: 30
+ area_r: &43ad0001
+ area_t: 416
+ area_b: &436bffff
+ id: 815
+ layer: 2
+ tab: -1
+ p2p_pml: false
+ tooltip: ""
+ pointer: -1
+ my_parent: _nameless.0C15.58E4
+}
+
+}
