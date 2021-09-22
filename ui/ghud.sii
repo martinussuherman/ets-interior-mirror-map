@@ -294,14 +294,14 @@ ui::group : _nameless.0C11.1D6C {
  my_children: 1
  my_children[0]: _nameless.0C15.0834
  name: Map
- coords_l: 732
+ coords_l: 632
  coords_r: 1009
- coords_t: 712
- coords_b: 489
- area_l: 732
+ coords_t: 512
+ coords_b: 189
+ area_l: 632
  area_r: 1009
- area_t: 712
- area_b: 489
+ area_t: 512
+ area_b: 189
  id: 600
  layer: 0
  tab: -1
@@ -315,10 +315,10 @@ ui::group : _nameless.0C11.1D6C {
 
 ui_map : _nameless.0C15.0834 {
  name: ""
- coords_l: 732
+ coords_l: 632
  coords_r: 1009
- coords_t: 712
- coords_b: 489
+ coords_t: 512
+ coords_b: 189
  area_l: &ff7d87d7
  area_r: &ff7d87d7
  area_t: &ff7d87d7
