@@ -5,7 +5,7 @@ ui::window : _nameless.01A8.ABEC {
  window_handler: null
  fitting: false
  my_children: 5
- my_children[0]: _nameless.01A7.20B4
+ my_children[0]: Mirror.Group
  my_children[1]: _nameless.0C11.1D6C
  my_children[2]: _nameless.0C15.0B4C
  my_children[3]: _nameless.0C15.13D4
@@ -34,11 +34,11 @@ ui::window : _nameless.01A8.ABEC {
 
 # make mirror pane reaching the upper left and right corner
 
-ui::group : _nameless.01A7.20B4 {
+ui::group : Mirror.Group {
  fitting: false
  my_children: 2
- my_children[0]: _nameless.01A4.1D4C
- my_children[1]: _nameless.0BFD.4DB4
+ my_children[0]: RightMirror.Group
+ my_children[1]: LeftMirror.Group
  name: Mirrors
  coords_l: 0
  coords_r: 1024
@@ -59,13 +59,13 @@ ui::group : _nameless.01A7.20B4 {
 
 # right mirror outer area
 
-ui::group : _nameless.01A4.1D4C {
+ui::group : RightMirror.Group {
  fitting: false
  my_children: 4
- my_children[0]: _nameless.01A8.998C
- my_children[1]: _nameless.0BFD.5D74
- my_children[2]: _nameless.0BFD.5EBC
- my_children[3]: _nameless.01AA.4E3C
+ my_children[0]: RightMirror.Pip
+ my_children[1]: RightMirror.BackgroundA
+ my_children[2]: RightMirror.Overlay
+ my_children[3]: RightMirror.BackgroundD
  name: RightMirror
  coords_l: 924
  coords_r: 1024
@@ -81,12 +81,12 @@ ui::group : _nameless.01A4.1D4C {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.01A7.20B4
+ my_parent: Mirror.Group
 }
 
 # right mirror inner area
 
-ui_pip : _nameless.01A8.998C {
+ui_pip : RightMirror.Pip {
  left_mirror: false
  name: RightMirror
  coords_l: 931
@@ -103,12 +103,12 @@ ui_pip : _nameless.01A8.998C {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.01A4.1D4C
+ my_parent: RightMirror.Group
 }
 
 # right mirror outer area
 
-ui::text : _nameless.0BFD.5D74 {
+ui::text : RightMirror.BackgroundA {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FFA4A4A4>"
  name: BackgroundA
  coords_l: 924
@@ -125,12 +125,12 @@ ui::text : _nameless.0BFD.5D74 {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.01A4.1D4C
+ my_parent: RightMirror.Group
 }
 
 # right mirror inner overlay
 
-ui::text : _nameless.0BFD.5EBC {
+ui::text : RightMirror.Overlay {
  text: "<color value=16000000><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n<ret><offset hshift=163><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><offset hshift=164><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><offset hshift=165><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><offset vshift=227><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><offset vshift=228><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><offset vshift=229><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n"
  name: Overlay
  coords_l: 931
@@ -147,12 +147,12 @@ ui::text : _nameless.0BFD.5EBC {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.01A4.1D4C
+ my_parent: RightMirror.Group
 }
 
 # right mirror outer area
 
-ui::text : _nameless.01AA.4E3C {
+ui::text : RightMirror.BackgroundD {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FF15BEE8>"
  name: BackgroundD
  coords_l: 924
@@ -169,18 +169,18 @@ ui::text : _nameless.01AA.4E3C {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.01A4.1D4C
+ my_parent: RightMirror.Group
 }
 
 # left mirror outer area
 
-ui::group : _nameless.0BFD.4DB4 {
+ui::group : LeftMirror.Group {
  fitting: false
  my_children: 4
- my_children[0]: _nameless.0BFD.4EE4
- my_children[1]: _nameless.0C11.10CC
- my_children[2]: _nameless.0C11.148C
- my_children[3]: _nameless.0C11.19AC
+ my_children[0]: LeftMirror.Pip
+ my_children[1]: LeftMirror.BackgroundA
+ my_children[2]: LeftMirror.Overlay
+ my_children[3]: LeftMirror.BackgroundD
  name: LeftMirror
  coords_l: 0
  coords_r: 100
@@ -196,12 +196,12 @@ ui::group : _nameless.0BFD.4DB4 {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.01A7.20B4
+ my_parent: Mirror.Group
 }
 
 # left mirror inner area
 
-ui_pip : _nameless.0BFD.4EE4 {
+ui_pip : LeftMirror.Pip {
  left_mirror: true
  name: LeftMirror
  coords_l: 7
@@ -218,12 +218,12 @@ ui_pip : _nameless.0BFD.4EE4 {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.0BFD.4DB4
+ my_parent: LeftMirror.Group
 }
 
 # left mirror outer area
 
-ui::text : _nameless.0C11.10CC {
+ui::text : LeftMirror.BackgroundA {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FFA4A4A4>"
  name: BackgroundA
  coords_l: 0
@@ -240,12 +240,12 @@ ui::text : _nameless.0C11.10CC {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.0BFD.4DB4
+ my_parent: LeftMirror.Group
 }
 
 # left mirror inner overlay
 
-ui::text : _nameless.0C11.148C {
+ui::text : LeftMirror.Overlay {
  text: "<color value=16000000><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n<ret><offset hshift=163><img src=/material/ui/white.mat width=3 yscale=stretch>\r\n<ret><offset hshift=164><img src=/material/ui/white.mat width=2 yscale=stretch>\r\n<ret><offset hshift=165><img src=/material/ui/white.mat width=1 yscale=stretch>\r\n<ret><offset vshift=227><img src=/material/ui/white.mat height=3 xscale=stretch>\r\n<ret><offset vshift=228><img src=/material/ui/white.mat height=2 xscale=stretch>\r\n<ret><offset vshift=229><img src=/material/ui/white.mat height=1 xscale=stretch>\r\n"
  name: Overlay
  coords_l: 7
@@ -262,12 +262,12 @@ ui::text : _nameless.0C11.148C {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.0BFD.4DB4
+ my_parent: LeftMirror.Group
 }
 
 # left mirror outer area
 
-ui::text : _nameless.0C11.19AC {
+ui::text : LeftMirror.BackgroundD {
  text: "<color value=4c000000><offset hshift=2><img src=/material/ui/white.mat width=176 height=244>\r\n<ret><offset hshift=1 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=178 vshift=1><img src=/material/ui/white.mat width=1 height=242>\r\n<ret><offset hshift=179 vshift=2><img src=/material/ui/white.mat width=1 height=240>\r\n<ret><offset hshift=5 vshift=5><img src=/material/ui/white.mat width=170 height=234 color=FF15BEE8>"
  name: BackgroundD
  coords_l: 0
@@ -284,7 +284,7 @@ ui::text : _nameless.0C11.19AC {
  p2p_pml: false
  tooltip: ""
  pointer: -1
- my_parent: _nameless.0BFD.4DB4
+ my_parent: LeftMirror.Group
 }
 
 # map area
